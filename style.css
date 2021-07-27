@@ -1,0 +1,195 @@
+body {
+    line-height: 1.6rem;
+    font-size: .75rem;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 50px auto;
+}
+
+.headlogo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    background-color: black;
+    color: #003C45;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.navLinks {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 0;
+    
+   
+}
+
+.tagline {
+    
+    color: #003C45;
+     padding-left: 2rem;
+    padding-top: 0;
+    
+    
+}
+.headlogo , .navLinks , .tagline{ 
+    
+     background: url(../img/Background.png) 100% 100% no-repeat;
+
+}
+
+.navLinks a {
+    border: 1px solid #dedede;
+    margin: 10px;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    
+
+}
+
+/*
+.divider {
+    height: 0.5rem;
+    background: #dedede;
+    border-color: #dedede;
+    margin: 2rem 0;
+}
+*/
+
+.masthead {
+    display: flex;
+    margin: 2rem 0;
+    
+}
+
+.masthead .menu {
+    width: 3rem;
+    margin-right: 1rem;
+    border: none;
+    border-bottom: 0.3rem solid #dedede;
+    
+}
+
+#active-button {
+    border-bottom: 0.3rem solid #8BC34A !important;
+}
+
+.masthead .menu .imgSection {
+    padding-bottom: 0.5rem;
+}
+
+.masthead .menu img {
+    width: 100%;
+    height: 100%;
+}
+
+/* For Main Content */
+
+.main-content {
+    display: grid;
+    position: relative;
+    height: 100%;
+    margin: 2rem 0;
+    padding : 2rem;
+    padding-left: 0;
+    background-color: #F0CE54;
+}
+
+.main-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-content .heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #003C45;
+}
+
+.main-content .content {
+    height: 100%;
+}
+
+.main-content .content .imgsection {
+    width: 25%;
+    float: left;
+    margin-right: 1rem;
+}
+
+.main-content .content .textsection {
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #003C45;
+
+}
+
+/* For Divider 2 */
+.divider1 {
+    height: 0.2rem;
+    background: #dedede;
+    border-color: #dedede;
+    margin: 2rem 0;
+}
+
+/* footer */
+
+.footer {
+    display: inline-flex;
+   
+}
+
+.footer i {
+    margin: 0 0.5rem;
+    font-size: 1.4rem;
+    color: #8BC34A;
+}
+
+
+/* For Responsiveness */
+
+@media (max-width: 30rem) {
+
+
+    body {
+        font-size: 0.75rem;
+    }
+
+
+    .navLinks {
+
+        display: block;
+    }
+
+    .navLinks a {
+
+        display: block;
+        border: none;
+        text-align: left;
+        border-bottom: 1px solid #dedede;
+
+    }
+
+    .navLinks a:last-child {
+        border-bottom: none;
+    }
+
+    .main-content .content .imgsection {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 30rem) and (max-width: 60rem) {
+
+    body {
+        
+        font-size: 1rem;
+    }
+
+}
